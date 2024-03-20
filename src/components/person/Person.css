@@ -1,0 +1,7 @@
+.person {
+  background-color: aliceblue;
+  border: 1px solid #000;
+  border-radius: 50%;
+
+  min-width: 200px;
+}
