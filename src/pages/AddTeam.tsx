@@ -8,9 +8,9 @@ const TEAM: TeamType = { id: 1, name: 'ThingwS', description: 'test description'
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
-export function Team() {
+export function AddTeam() {
   const params = useParams();
-  const id = params.id;
+  const id = 1;
 
   const [name, setName] = useState<string>(TEAM.name)
   const [description, setDesc] = useState<string>(TEAM.description  || '')
@@ -29,8 +29,7 @@ export function Team() {
       // await sleep(4000)
       
       const teamsJson = await response.json();
-      //setName(teams[3].name)
-      setName(teamsJson[Number(id)-1].name)
+      setName('team')
       setTeams(teamsJson)
     }
     fetchData()
@@ -50,8 +49,6 @@ export function Team() {
     const url = new URL(`/teams/`, apiUrl);
     
     const result = await fetch(url.href);
-
-    // Uppfæra team í gegnum API með því að senda gegnum fetch
 
     const response = await fetch(result.url, {
       body: JSON.stringify({
@@ -75,14 +72,14 @@ export function Team() {
     <Container>
       <form onSubmit={onFormSubmit}>
         <div>
-        <p>{name}</p>
+        <p>Insert new team</p>
           <label>Heiti:</label>
           <input type="text" onChange={onTeamNameChange} value={name} />
         </div>
-        <button>Uppfæra!</button>
+        <button>Bæta við!</button>
       </form>
-      {errors && (<p>Villur við að uppfæra lið: {JSON.stringify(errors)}</p>)}
-      <p>Nýtt heiti á liði verður: {name}</p>
+      {errors && (<p>Villur við að bæta við lið: {JSON.stringify(errors)}</p>)}
+      <p>Nýtt liði verður: {name}</p>
     </Container>
     </>
   )

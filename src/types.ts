@@ -9,10 +9,10 @@ export type Game = {
   date: string;
   home: {
     name?: string;
-    score?: number;
+    score: number;
   };
   away: {
     name?: string;
-    score?: number;
+    score: number;
   };
 }

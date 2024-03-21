@@ -37,7 +37,7 @@ export function Games() {
       <ul>
         {games.map((game) => {
           return (
-            <li key={game.id}><Link to={`/games/${game.id}`}>{game.date.toString()},{game.id}</Link></li>
+            <li key={game.id}><Link to={`/games/${game.id}`}>{game.date.toString()}, Leikja-id: {game.id}</Link></li>
           )
         })}
       </ul>

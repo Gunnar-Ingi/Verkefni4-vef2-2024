@@ -14,6 +14,9 @@ export function Layout() {
             <Link to="/teams">Teams</Link>
           </li>
           <li>
+            <Link to="/addteam">Add Team</Link>
+          </li>
+          <li>
             <Link to="/games">Games</Link>
           </li>
         </ul>

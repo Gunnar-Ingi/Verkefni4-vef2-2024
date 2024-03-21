@@ -2,6 +2,8 @@
 
 gig41@hi.is
 
+Stick this into dot-env: REACT_APP_API_URL=http://localhost:3000
+
 ## Available Scripts
 
 In the project directory, you can run:
