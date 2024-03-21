@@ -16,7 +16,7 @@ export function Teams() {
   useEffect(() => {
     async function fetchData() {
       const url = new URL(`/teams`, apiUrl);
-        
+
       const result = await fetch(url.href);
     
       const response = await fetch(result.url);

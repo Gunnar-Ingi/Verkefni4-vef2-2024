@@ -6,13 +6,13 @@ export type Team = {
 
 export type Game = {
   id: number;
-  date: Date;
-  home?: {
-    name: string;
-    score: number;
+  date: string;
+  home: {
+    name?: string;
+    score?: number;
   };
-  away?: {
-    name: string;
-    score: number;
+  away: {
+    name?: string;
+    score?: number;
   };
 }

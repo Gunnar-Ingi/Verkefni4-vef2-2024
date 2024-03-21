@@ -16,9 +16,6 @@ export function Layout() {
           <li>
             <Link to="/games">Games</Link>
           </li>
-          <li>
-            <Link to="/experiment">Crazy Experiment!</Link>
-          </li>
         </ul>
       </nav>
 

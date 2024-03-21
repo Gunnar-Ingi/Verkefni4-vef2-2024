@@ -11,7 +11,7 @@ async function sleep(n: number) {
 }
 
 export function Games() {
-  const [games, setGames] = useState<Array<Game>>([{date: new Date(8.64e15), id: 1}])
+  const [games, setGames] = useState<Array<Game>>([{date: 'thigns', id: 1, home: {name: 'thing', score: 1}, away: {name: 'thing-away', score: 2}}])
 
   useEffect(() => {
     async function fetchData() {
@@ -37,7 +37,7 @@ export function Games() {
       <ul>
         {games.map((game) => {
           return (
-            <li key={game.id}><Link to={`/games/${game.id}`}>{game.date.toString()}</Link></li>
+            <li key={game.id}><Link to={`/games/${game.id}`}>{game.date.toString()},{game.id}</Link></li>
           )
         })}
       </ul>

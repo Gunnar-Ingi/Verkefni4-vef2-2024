@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Verkefni 4 2024
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+gig41@hi.is
 
 ## Available Scripts
 
